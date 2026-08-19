@@ -2,11 +2,12 @@
 
 An AI sales agent for small businesses: a chat widget that answers visitor questions 24/7, captures leads, books appointments, follows up automatically, and recommends products. This repository contains the full landing page, a scripted demo of the chat widget, and a lead-capture form.
 
-## Live example
+## Live examples
 
-The site is deployed to GitHub Pages: https://jaybabaa.github.io/salesagent-ai/
+- **Preview:** https://4751ca90d4a6762726a44c949a80cc8d.ctonew.app
+- **GitHub Pages:** https://jaybabaa.github.io/salesagent-ai/
 
-Try the chat widget ("Try the demo") and the waitlist form on the live site.
+Try the chat widget ("Try the demo") and the waitlist form on either URL.
 
 ## Repo structure
 
