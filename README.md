@@ -2,12 +2,11 @@
 
 An AI sales agent for small businesses: a chat widget that answers visitor questions 24/7, captures leads, books appointments, follows up automatically, and recommends products. This repository contains the full landing page, a scripted demo of the chat widget, and a lead-capture form.
 
-## Live examples
+## Live example
 
-- **Preview:** https://4751ca90d4a6762726a44c949a80cc8d.ctonew.app
-- **GitHub Pages:** https://jaybabaa.github.io/salesagent-ai/
+The site is deployed to GitHub Pages: https://jaybabaa.github.io/salesagent-ai/
 
-Try the chat widget ("Try the demo") and the waitlist form on either URL.
+Try the chat widget ("Try the demo") and the waitlist form on the live site.
 
 ## Repo structure
 
@@ -28,7 +27,6 @@ serve.ts             # production server (port 3000)
 go-live.sh           # one-shot Vercel deployment (needs VERCEL_TOKEN)
 vercel-entry.ts      # Vercel Build Output API entry point
 build-vercel.sh      # assembles the .vercel/output bundle
-.github/workflows/deploy-pages.yml  # GitHub Pages deploy workflow (present; see Deploy options)
 ```
 
 ## How it works today
@@ -61,7 +59,7 @@ The site is a TanStack Start app, so the Pages build bakes in the `/salesagent-a
 GH_PAGES=1 bun run build && bun run static-export
 ```
 
-Then publish the contents of `dist/client` to the `gh-pages` branch (Pages is configured with the legacy `gh-pages` branch source — this is how the live Pages URL above is deployed). A `.github/workflows/deploy-pages.yml` workflow that would automate this from `main` is included, but is not currently active (the repo token used for deploys lacks the workflow scope); deploys work today via the `gh-pages` branch approach.
+Then publish the contents of `dist/client` to the `gh-pages` branch — Pages is configured with the legacy `gh-pages` branch source, which is how the live Pages URL above is deployed. Re-run the build and push `dist/client` to update the site. (If you prefer push-to-publish automation, a `.github/workflows/deploy-pages.yml` workflow can be added — it needs a GitHub token with the `workflow` scope.)
 
 ### Vercel
 

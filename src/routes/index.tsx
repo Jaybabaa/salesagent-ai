@@ -547,15 +547,6 @@ function Footer() {
         </div>
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-gray-200 pt-6 text-xs text-gray-400 sm:flex-row">
           <p>© {new Date().getFullYear()} SalesAgent AI. All rights reserved.</p>
-          <p>
-            Built with{" "}
-            <a
-              href="https://cto.new"
-              className="underline transition hover:text-gray-600"
-            >
-              cto.new
-            </a>
-          </p>
         </div>
       </div>
     </footer>
